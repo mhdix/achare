@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('Vazirmatn-Black.woff2') format('woff2');
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,button {
+    font-family: 'vazir';
+}
