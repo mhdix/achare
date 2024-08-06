@@ -3,6 +3,12 @@
     src: url('Vazirmatn-Black.woff2') format('woff2');
 
     font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'vazir';
+    src: url('Vazirmatn-Regular.woff2') format('woff');
+    font-style: normal;
     font-weight: normal;
 }
 
