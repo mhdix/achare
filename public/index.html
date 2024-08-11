@@ -9,7 +9,7 @@
 </head>
 <body dir="rtl" class="bg-gray-100">
     <!-- header -->
-    <header class="max-w-full p-2 md:p-4 flex items-center justify-between bg-white fixed top-0 w-screen ">
+    <header class="max-w-full p-2 md:p-4 flex items-center justify-between bg-white fixed top-0 w-screen z-20">
         <div class="flex items-center gap-3 justify-between w-full">
             <!-- logo & menu -->
             <div class="flex gap-2 md:flex-row-reverse items-center ">
@@ -127,25 +127,67 @@
         </div>
     </header>
 
-    <!-- sub header -->
-     <div class="mt-16 px-4 md:px-20 md:mt-28 space-y-4 md:flex md:flex-col md:items-center flex flex-col items-center justify-center">
+    <!-- content -->
+    <div class="space-y-8 px-4">
         <!-- search -->
-         
-         <div class="w-full flex max-w-md justify-center border md:hidden">
-            <input  type="search" class="w-full px-4 py-3" placeholder="جستجو">
-         </div>
-        
-        <ul class="flex justify-around max-w-md md:max-w-full relative text-xs text-slate-500 md:justify-start md:w-full md:gap-10 md:text-sm">
-            <li class="text-teal-500 font-bold underline relative underline-offset-8 decoration-teal-500 decoration-2">
-                خدمات آچاره
-                <!-- selected -->
-                <div class="rounded-2xl underline underline-offset-8 h-2 border-cyan-500 w-full mt-4 absolute"></div>
-            </li>
+        <div class="mt-16 md:px-20 md:mt-28 space-y-4 md:flex md:flex-col md:items-center flex flex-col items-center justify-center">
+            <!-- search -->
             
-            <li class="hover:text-teal-950 hover:font-bold">ثبت نام به عنوان متخصص</li>
-            <li class="hover:text-teal-950 hover:font-bold">ویترین</li>
-        </ul>
+            <div class="w-full flex max-w-md justify-center border md:hidden rounded-xl overflow-hidden">
+                <input  type="search" class="w-full px-4 py-3 " placeholder="جستجو">
+            </div>
+            
+            <ul class="flex justify-around max-w-md md:max-w-full relative text-xs text-slate-500 md:justify-start md:w-full md:gap-10 md:text-sm gap-5">
+                <li class="text-teal-500 font-bold underline relative underline-offset-8 decoration-teal-500 decoration-2">
+                    خدمات آچاره
+                    <!-- selected -->
+                    <div class="rounded-2xl underline underline-offset-8 h-2 border-cyan-500 w-full mt-4 absolute"></div>
+                </li>
+                
+                <li class="hover:text-teal-950 hover:font-bold">ثبت نام به عنوان متخصص</li>
+                <li class="hover:text-teal-950 hover:font-bold">ویترین</li>
+            </ul>
+        </div>
+        <div class="border-b border-gray-400 md:w-96 md:mr-16 right-8 mt-5 md:flex hidden"></div>
+
+        <!-- workaround -->
+        <div class="text-center">
+            <p class="font- text-xl">چاره کار ... آچاره!</p>
+            <div class="grid grid-cols-4 gap-5 mt-6">
+                <span class="">
+                    <img src="../assets/image/workround/2.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">اسباب کشی و حمل بار</p>
+                </span>
+                <span class="">
+                    <img src="../assets/image/workround/3.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">تعمیرات اشیا</p>
+                </span>
+                <span class="">
+                    <img src="../assets/image/workround/4.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">تمیز کاری</p>
+                </span>
+                <span class="">
+                    <img src="../assets/image/workround/5.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">ساختمان</p>
+                </span>
+                <span class="">
+                    <img src="../assets/image/workround/6.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">کشکول</p>
+                </span>
+                <span class="">
+                    <img src="../assets/image/workround/7.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">ساختمان و مجتمع ها</p>
+                </span>
+                <span class="">
+                    <img src="../assets/image/workround/8.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">سلامت و زیبایی</p>
+                </span>
+                <span class="">
+                    <img src="../assets/image/workround/9.webp" class="bg-white p-2 rounded-md shadow-xl" alt="">
+                    <p class="text-xs mt-2">خودرو</p>
+                </span>
+            </div>
+        </div>
     </div>
-    <div class="border-b border-gray-400 md:w-96 md:mr-16 right-8 mt-5 md:flex hidden"></div>
 </body>
 </html>
