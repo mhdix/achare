@@ -351,18 +351,20 @@
                 <button class="w-5/12 p-2 md:w-3/12 lg:w-3/12 text-xs rounded-md text-white bg-teal-500">دریافت کد تخفیف</button>
             </div>
         </div>
+        
+        <!-- service popular -->
         <div class="bg-white p-2 pt-7 rounded-md shadow-sm border">
             <h1 class="text-slate-700 font-bold pr-2">خدمات پر طرفدار</h1>
-            <div class="mt-2 md:mt-4">
-                <ul class="p-2 flex flex-col gap-4 text-sm md:flex-row md:w-full md:text-">
-                    <span class="md:flex md:flex-col md:gap-4">
+            <div class="mt-2 md:mt-4 lg:mt-8">
+                <ul class="p-2 flex flex-col gap-4 text-sm md:flex-row md:w-full lg:text-lg">
+                    <span class="md:flex md:flex-col md:gap-4 space-y-3">
                         <li>تعمیر ظرفشویی</li>
                         <li>قیمت اسکتنشن مو</li>
                         <li>تعمیر لباسشویی</li>
                         <li>تعمیر ظرفشویی</li>
                         <li>قیمت اسکتنشن مو</li>
                     </span>
-                    <span class="hidden md:flex md:flex-col md:gap-4 mr-48">
+                    <span class="hidden md:flex md:flex-col md:gap-4 mr-48 space-y-3">
                         <li>تعمیر لباسشویی</li>
                         <li>تعمیر لباسشویی</li>
                         <li>تعمیر ظرفشویی</li>
@@ -372,7 +374,62 @@
                 </ul>
             </div>
         </div>
+
     </div>
+    <!-- footer -->
+        <div class="bg-white overflow-hidden">
+            <div class="p-4" >
+                <div x-data="{ dropdown: true }">
+                    <span class="flex items-center justify-between"> 
+                        <p>آچاره</p>
+                        <span class="text-lg" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-90' : ''">></span>
+                    </span>
+                    <ul class="text-slate-500 mt-4 text-sm gap-2 flex flex-col" x-show="dropdown == true">
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                    </ul>
+                </div>
+                <div class="border-b mt-4"></div>
+                <div class="mt-4" x-data="{ dropdown: true }">
+                    <span class="flex items-center justify-between"> 
+                        <p>لینک های مرتبط</p>
+                        <span class="text-lg" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-90' : ''">></span>
+                    </span>
+                    <ul class="text-slate-500 mt-4 text-sm gap-2 flex flex-col" x-show="dropdown == true">
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                    </ul>
+                </div>
+                
+                <div class="border-b mt-4"></div>
+                <div class="mt-4" x-data="{ dropdown: true }">
+                    <span class="flex items-center justify-between"> 
+                        <p>مجلات آچاره</p>
+                        <span class="text-lg" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-90' : ''">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                            
+                        </span>
+                    </span>
+                    <ul class="text-slate-500 mt-4 text-sm gap-2 flex flex-col" x-show="dropdown == true">
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                        <li>لینک</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <!-- alpain js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js"></script>
 </body>
 </html>
