@@ -9,9 +9,9 @@
 </head>
 <body dir="rtl" class="bg-gray-100  overflow-x-hidden">
 
-    <div class="mx-auto w-screen">
+    <div class="mx-auto w-screen overflow-hidden">
         <!-- header -->
-    <header class="max-w-full p-2 md:p-4 flex items-center justify-between bg-white fixed top-0 w-screen z-20">
+        <header class="max-w-full p-2 md:p-4 flex items-center justify-between bg-white fixed top-0 w-screen z-20">
         <div class="flex items-center gap-3 justify-between w-full max-w-screen-xl m-auto">
             <!-- logo & menu -->
             <div class="flex gap-2 md:flex-row-reverse items-center ">
@@ -127,10 +127,10 @@
                 <button class="border border-slate-300 min-w-24 rounded-md py-2 px-4 text-slate-400">ثبت نام | ورود</button>
             </div>
         </div>
-    </header>
-
-    <!-- content -->
-    <div class="space-y-14 px-4 m-auto  w-screen max-w-screen-xl">
+        </header>
+    
+        <!-- content -->
+        <div class="space-y-14 px-4 m-auto  w-screen max-w-screen-xl">
         <!-- search -->
         <div class="bg-white mt-16 overflow-hidden rounded-lg border shadow-md md:hidden">
             <input  type="search" class="w-full px-4 py-3 " placeholder="جستجو">
@@ -375,14 +375,17 @@
             </div>
         </div>
 
-    </div>
-    <!-- footer -->
-        <div class="bg-white overflow-hidden">
+        </div>
+        
+        <!-- footer -->
+        <div class="bg-white overflow-hidden mt-7">
             <div class="p-4" >
                 <div x-data="{ dropdown: true }">
                     <span class="flex items-center justify-between"> 
                         <p>آچاره</p>
-                        <span class="text-lg" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-90' : ''">></span>
+                        <span class="w-4" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-0' : 'rotate-180'">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                        </span>
                     </span>
                     <ul class="text-slate-500 mt-4 text-sm gap-2 flex flex-col" x-show="dropdown == true">
                         <li>لینک</li>
@@ -396,7 +399,9 @@
                 <div class="mt-4" x-data="{ dropdown: true }">
                     <span class="flex items-center justify-between"> 
                         <p>لینک های مرتبط</p>
-                        <span class="text-lg" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-90' : ''">></span>
+                        <span class="w-4" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-0' : 'rotate-180'">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                        </span>
                     </span>
                     <ul class="text-slate-500 mt-4 text-sm gap-2 flex flex-col" x-show="dropdown == true">
                         <li>لینک</li>
@@ -411,9 +416,8 @@
                 <div class="mt-4" x-data="{ dropdown: true }">
                     <span class="flex items-center justify-between"> 
                         <p>مجلات آچاره</p>
-                        <span class="text-lg" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-90' : ''">
+                        <span class="w-4" @click="dropdown = !dropdown" :class="dropdown == true ? 'rotate-0' : 'rotate-180'">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
-                            
                         </span>
                     </span>
                     <ul class="text-slate-500 mt-4 text-sm gap-2 flex flex-col" x-show="dropdown == true">
@@ -426,7 +430,7 @@
                 </div>
             </div>
         </div>
-
+        
     </div>
 
     <!-- alpain js -->
