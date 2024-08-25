@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سرویس ها | آچاره</title>
     <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="../assets/fonts/vazir/font.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100" dir="rtl">
     
     <div class="mx-auto w-full">
         <!-- header -->
@@ -50,8 +51,8 @@
             </div>
 
             <!-- search -->
-            <div class="hidden">
-                <input type="search" class="border-2 rounded-sm w-6">
+            <div class="hidden md:flex">
+                <input type="search" class="border border-slate-400 rounded-lg w-full p-2">
             </div>
 
             <!-- phone & info -->
@@ -129,13 +130,23 @@
         </header>
     
         <!-- content -->
-        <div class="space-y-14 px-4 m-auto  w-screen max-w-screen-xl">
+        <div class="space-y-4 px-4 m-auto  w-screen max-w-screen-xl mt-16 md:mt-24">
         <!-- search -->
-        <div class="bg-white mt-16 overflow-hidden rounded-lg border shadow-md md:hidden">
+        <div class="bg-white mt-11 overflow-hidden rounded-md border  md:hidden">
             <input  type="search" class="w-full px-4 py-3 " placeholder="جستجو">
         </div>
 
+        <!-- link -->
+        <div class="text-xs md:text-sm bg-red-50 md:mt-24 flex gap-2 text-slate-500"> 
+            <p>آچاره</p>
+            <?xml version="1.0" class encoding="UTF-8" standalone="no"?> <svg viewBox="0 0 24 24" class="w-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12H4M4 12L7 9M4 12L7 15" stroke="#292556" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                    
+            <p class="text-slate-800">همه خدمات</p>
+        </div>
 
+
+        <div></div>
     </div>
         
 </body>
