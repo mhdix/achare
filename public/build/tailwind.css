@@ -940,6 +940,10 @@ video {
   justify-self: center;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -948,12 +952,24 @@ video {
   overflow: scroll;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-2xl {
